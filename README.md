@@ -1,6 +1,6 @@
 # Qt-tutorial
 
-This tutorial follows the following sequence:
+This *tutorial* follows the following sequence:
 
 1. hello
 2. PrettyButton
