@@ -33,6 +33,12 @@ https://doc-snapshots.qt.io/qtcreator-4.6/qtcreator-accelbubble-example.html
   * Deselect **x**, **y**, and **ui.qml file**.
 
 ### Moving the Bubble
+#### Edit bubble.qml
+Add the following properties in the `Image` object:
+>     smooth: true
+>     property real centerX
+>     property real centerY
+>     property real bubbleCenter
 
 
 ## Deploying to the Device
