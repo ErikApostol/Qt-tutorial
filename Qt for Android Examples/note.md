@@ -32,13 +32,31 @@ https://doc-snapshots.qt.io/qtcreator-4.6/qtcreator-accelbubble-example.html
   * Enter *Bubble* into Component Name.
   * Deselect **x**, **y**, and **ui.qml file**.
 
-### Moving the Bubble
+### Centering the Bubble
 #### Edit bubble.qml
-Add the following properties in the `Image` object:
->     smooth: true
->     property real centerX
->     property real centerY
->     property real bubbleCenter
+Add the following positioning properties in the `Image` object:
+```C++
+    smooth: true
+    property real centerX
+    property real centerY
+    property real bubbleCenter
+```
+#### Edit maim.qml
+* Change the title of the ApplicationWindow to "Accelerate Bubble".
+* Add the following code to `ApplicationWindow` :arrow_right: `SwipeView` :arrow_right: `Page1Form`:
+```C++
+    bubble {
+        id: bubble
+        centerX: mainWindow.width / 2
+        centerY: mainWindow.height / 2
+        bubbleRadius: bubble.width / 2
+        x: bubble.centerX - bubble.bubbleRadius
+        y: bubble.centerY - bubble.bubbleRadius
+    }
+```
+### Moving the Bubble using Accelerometer
+#### Edit maim.qml
+
 
 
 ## Deploying to the Device
