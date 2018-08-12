@@ -16,6 +16,7 @@ https://doc-snapshots.qt.io/qtcreator-4.6/qtcreator-accelbubble-example.html
 * *Page1Form.ui.qml* creates the application main view, and *main.qml* creates the application logic. 
   * *Page2Form.ui.qml* is ignored.
 ### Create a AccelBubble Main View
+### Moving the Bubble
 
 
 ## Deploying to the Device
